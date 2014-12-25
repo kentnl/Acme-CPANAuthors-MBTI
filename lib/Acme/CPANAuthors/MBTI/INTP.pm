@@ -9,7 +9,7 @@ package Acme::CPANAuthors::MBTI::INTP;
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
-# # Code inserted by inc/expand_author_list#authors_to_code
+# Code inserted by inc/expand_author_list#authors_to_code
 # from Dist::Zilla::Plugin::MungeFile::WithDataSection 0.007 's __DATA__ section
 my %authors  = (     KENTNL => 'Kent Fredric',
  );
@@ -27,6 +27,8 @@ sub avatar_url { return $avatar_urls{ $_[1] } }
 
 1;
 
+__END__
+
 =pod
 
 =encoding UTF-8
@@ -38,6 +40,22 @@ Acme::CPANAuthors::MBTI::INTP - The TiNe CPAN Authors
 =head1 VERSION
 
 version 0.001000
+
+=head1 DESCRIPTION
+
+=begin html
+
+<div style="text-align:center;padding:0px!important;overflow-y:hidden;
+margin-left: auto; margin-right: auto; max-width: 430px">
+<!-- Data inserted by inc/expand_author_list#authors_to_avatars
+ from Dist::Zilla::Plugin::MungeFile::WithDataSection 0.007 's __DATA__ section -->
+
+</div>
+
+=end html
+
+__DATA__
+KENTNL
 
 =head1 AUTHOR
 
@@ -51,6 +69,3 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
-
-__DATA__
-KENTNL
