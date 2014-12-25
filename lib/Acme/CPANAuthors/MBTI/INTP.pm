@@ -9,6 +9,8 @@ package Acme::CPANAuthors::MBTI::INTP;
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
+our $VERSION = '0.001000';
+
 # Code inserted by inc/expand_author_list#authors_to_code
 # from Dist::Zilla::Plugin::MungeFile::WithDataSection 0.007 's __DATA__ section
 my %authors  = (     KENTNL => 'Kent Fredric',
