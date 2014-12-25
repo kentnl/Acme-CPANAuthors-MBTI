@@ -20,7 +20,7 @@
          },
          "requires" : {
             "ExtUtils::MakeMaker" : "0",
-            "perl" : "5.006"
+            "perl" : "5.008"
          }
       },
       "develop" : {
@@ -91,8 +91,9 @@
       "runtime" : {
          "requires" : {
             "Moo" : "0",
-            "perl" : "5.006",
+            "perl" : "5.008",
             "strict" : "0",
+            "utf8" : "0",
             "warnings" : "0"
          }
       },
@@ -106,13 +107,17 @@
             "ExtUtils::MakeMaker" : "0",
             "File::Spec" : "0",
             "Test::More" : "0.89",
-            "perl" : "5.006"
+            "perl" : "5.008"
          }
       }
    },
    "provides" : {
       "Acme::CPANAuthors::MBTI" : {
          "file" : "lib/Acme/CPANAuthors/MBTI.pm",
+         "version" : "0.001000"
+      },
+      "Acme::CPANAuthors::MBTI::INTP" : {
+         "file" : "lib/Acme/CPANAuthors/MBTI/INTP.pm",
          "version" : "0.001000"
       }
    },
@@ -315,7 +320,8 @@
             "config" : {
                "Dist::Zilla::Plugin::Test::Compile::PerFile" : {
                   "file" : [
-                     "lib/Acme/CPANAuthors/MBTI.pm"
+                     "lib/Acme/CPANAuthors/MBTI.pm",
+                     "lib/Acme/CPANAuthors/MBTI/INTP.pm"
                   ],
                   "path_translator" : "base64_filter",
                   "prefix" : "t/00-compile",

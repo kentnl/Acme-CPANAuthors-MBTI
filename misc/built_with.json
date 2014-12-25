@@ -61,6 +61,7 @@
       "Test::Pod" : null,
       "Test::Pod::Coverage" : null,
       "strict" : null,
+      "utf8" : null,
       "warnings" : null
    },
    "perl" : {
