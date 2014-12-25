@@ -9,19 +9,23 @@ package Acme::CPANAuthors::MBTI::INTP;
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
-# {{
-  require "inc/expand_author_list.pm";
-  my $data = expand_author_list::extract_data('MBTI::INTP', $DATA );
-  authors_to_code({
-    plugin => $plugin,
-    category => 'MBTI::INTP',
-    data => $data,
-  });
-}}
+# # Code inserted by inc/expand_author_list#authors_to_code
+# from Dist::Zilla::Plugin::MungeFile::WithDataSection 0.007 's __DATA__ section
+my %authors  = (     KENTNL => 'Kent Fredric',
+ );
+
+my %avatar_urls = (     KENTNL => 'https://secure.gravatar.com/avatar/4b96677ae9ecbe76b8c33ead244f7407?s=80&d=http%3A%2F%2Fwww.gravatar.com%2Favatar%2F4b96677ae9ecbe76b8c33ead244f7407%3Fs%3D130%26d%3Didenticon',
+ );
+
+sub authors { wantarray ? %authors : \%authors }
+
+sub category { 'MBTI::INTP' }
+
+sub avatar_url { return $avatar_urls{ $_[1] } }
+# end generated code
+
 
 1;
-
-__END__
 
 =pod
 
@@ -47,3 +51,6 @@ This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
 
 =cut
+
+__DATA__
+KENTNL

@@ -137,7 +137,7 @@
                "Dist::Zilla::Plugin::MungeFile::WithDataSection" : {
                   "files" : [],
                   "finder" : [
-                     ":MainModule"
+                     ":InstallModules"
                   ]
                }
             },

@@ -43,7 +43,7 @@ x_Dist_Zilla:
         Dist::Zilla::Plugin::MungeFile::WithDataSection:
           files: []
           finder:
-            - ':MainModule'
+            - ':InstallModules'
       name: MungeFile::WithDataSection
       version: '0.007'
     -
