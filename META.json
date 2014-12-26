@@ -1,5 +1,5 @@
 {
-   "abstract" : "Kent Failed To Provide An Abstract",
+   "abstract" : "CPAN Authors by MBTI Type",
    "author" : [
       "Kent Fredric <kentnl@cpan.org>"
    ],
@@ -99,7 +99,6 @@
       },
       "runtime" : {
          "requires" : {
-            "Moo" : "0",
             "perl" : "5.008",
             "strict" : "0",
             "utf8" : "0",

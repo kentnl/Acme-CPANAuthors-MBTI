@@ -10,7 +10,7 @@ use ExtUtils::MakeMaker;
 
 
 my %WriteMakefileArgs = (
-  "ABSTRACT" => "Kent Failed To Provide An Abstract",
+  "ABSTRACT" => "CPAN Authors by MBTI Type",
   "AUTHOR" => "Kent Fredric <kentnl\@cpan.org>",
   "CONFIGURE_REQUIRES" => {
     "ExtUtils::MakeMaker" => 0
@@ -21,7 +21,6 @@ my %WriteMakefileArgs = (
   "MIN_PERL_VERSION" => "5.014",
   "NAME" => "Acme::CPANAuthors::MBTI",
   "PREREQ_PM" => {
-    "Moo" => 0,
     "strict" => 0,
     "utf8" => 0,
     "warnings" => 0
@@ -41,7 +40,6 @@ my %WriteMakefileArgs = (
 my %FallbackPrereqs = (
   "ExtUtils::MakeMaker" => 0,
   "File::Spec" => 0,
-  "Moo" => 0,
   "Test::More" => "0.89",
   "strict" => 0,
   "utf8" => 0,

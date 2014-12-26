@@ -59,7 +59,6 @@
       "JSON::MaybeXS" : null,
       "List::MoreUtils" : null,
       "Math::Random::MT" : null,
-      "Moo" : null,
       "Parse::CPAN::Whois" : null,
       "Path::Tiny" : null,
       "Pod::Coverage::TrustPod" : null,

@@ -84,7 +84,6 @@ do { my $x = {
                     },
        'runtime' => {
                       'requires' => {
-                                      'Moo' => '0',
                                       'perl' => '5.008',
                                       'strict' => '0',
                                       'utf8' => '0',
