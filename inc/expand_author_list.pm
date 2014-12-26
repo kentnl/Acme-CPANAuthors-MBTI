@@ -1,4 +1,4 @@
-use 5.010;
+use 5.014;    # /r modifier
 use strict;
 use warnings;
 
