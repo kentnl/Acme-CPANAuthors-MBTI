@@ -130,6 +130,17 @@
       }
    },
    "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/kentnl/Acme-CPANAuthors-MBTI/issues"
+      },
+      "homepage" : "https://github.com/kentnl/Acme-CPANAuthors-MBTI",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/kentnl/Acme-CPANAuthors-MBTI.git",
+         "web" : "https://github.com/kentnl/Acme-CPANAuthors-MBTI"
+      }
+   },
    "version" : "0.001000",
    "x_BuiltWith" : {
       "external_file" : "misc/built_with.json"

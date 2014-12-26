@@ -29,6 +29,10 @@ requires:
   strict: '0'
   utf8: '0'
   warnings: '0'
+resources:
+  bugtracker: https://github.com/kentnl/Acme-CPANAuthors-MBTI/issues
+  homepage: https://github.com/kentnl/Acme-CPANAuthors-MBTI
+  repository: https://github.com/kentnl/Acme-CPANAuthors-MBTI.git
 version: '0.001000'
 x_BuiltWith:
   external_file: misc/built_with.json
