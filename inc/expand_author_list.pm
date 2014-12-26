@@ -200,7 +200,7 @@ sub generate_synopsis {
   my @items          = @{ $config{'data'} };
   my @authors        = map { $items[ rng->irand() % scalar @items ] } 1 .. 3;
 
-  return ( <<"EOF" =~ s/^/    /msgr );
+  return ( <<"EOF" =~ s/^(\w)/    $1/msgr );
 use Acme::CPANAuthors;
 use Acme::CPANAuthors::$config{category};
 # Or just use Acme::CPANAuthors::MBTI

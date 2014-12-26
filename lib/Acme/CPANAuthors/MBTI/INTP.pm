@@ -50,15 +50,15 @@ version 0.001000
 
     use Acme::CPANAuthors;
     use Acme::CPANAuthors::MBTI::INTP;
-    # Or just use Acme::CPANAuthors::MBTI
-    
+# Or just use Acme::CPANAuthors::MBTI
+
     my $authors  = Acme::CPANAuthors->new('MBTI::INTP');
     my $number   = $authors->count;
     my @ids      = $authors->id;
     my @distros  = $authors->distributions('KENTNL');
     my $url      = $authors->avatar_url('KENTNL');
     my $kwalitee = $authors->kwalitee('KENTNL');
-    
+
     my %authorshash    = Acme::CPANAuthors::MBTI::INTP->authors;
     my $authorshashref = Acme::CPANAuthors::MBTI::INTP->authors;
     my $category       = Acme::CPANAuthors::MBTI::INTP->category;
