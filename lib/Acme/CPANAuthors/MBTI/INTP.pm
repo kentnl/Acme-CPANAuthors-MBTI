@@ -1,4 +1,4 @@
-use 5.008;   # utf8
+use 5.008;    # utf8
 use strict;
 use warnings;
 use utf8;
@@ -10,7 +10,7 @@ package Acme::CPANAuthors::MBTI::INTP;
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
 our $VERSION = '0.001000';
-
+#<<<
 # Code inserted by inc/expand_author_list#authors_to_code
 # by Dist::Zilla::Plugin::MungeFile::WithDataSection 0.007
 my %authors  = (
@@ -28,6 +28,7 @@ sub category { 'MBTI::INTP' }
 sub avatar_url { return $avatar_urls{ $_[1] } }
 # end generated code
 
+#>>>
 
 1;
 
@@ -64,6 +65,8 @@ version 0.001000
 
 =head1 DESCRIPTION
 
+This class provides a hash of PAUSE ID's and names of authors who have identified themselves as   L<< C<INTP>|https://en.wikipedia.org/wiki/INTP >>
+
 =for html <div style="text-align:center;padding:0px!important;overflow-y:hidden;
 margin-left: auto; margin-right: auto; max-width: 430px">
 <!-- Data inserted by inc/expand_author_list#authors_to_avatars
@@ -71,8 +74,17 @@ margin-left: auto; margin-right: auto; max-width: 430px">
 <a href="http://metacpan.org/author/KENTNL"><span><img style="margin: 0 5px 5px 0;" width="80" height="80" src="https://secure.gravatar.com/avatar/4b96677ae9ecbe76b8c33ead244f7407?s=80&d=http%3A%2F%2Fwww.gravatar.com%2Favatar%2F4b96677ae9ecbe76b8c33ead244f7407%3Fs%3D130%26d%3Didenticon" alt="KENTNL" title="KENTNL (Kent Fredric), 149 distributions" /></span></a>
 </div>
 
-__DATA__
-KENTNL
+For more details see L<< C<Acme::CPANAuthors::MBTI> >>.
+
+=over 4
+
+=item * L<< C<INTP> on personalitypage.com|http://personalitypage.com/INTP.html >>
+
+=item * L<< C<INTP> on typelogic.com|http://typelogic.com/intp.html >>
+
+=item * L<< C<INTP> on Wikipedia|https://en.wikipedia.org/wiki/INTP >>
+
+=back
 
 =head1 AUTHOR
 
