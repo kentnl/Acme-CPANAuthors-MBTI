@@ -1,4 +1,7 @@
 {
+   "failures" : {
+      "Acme::CPANAuthors::Factory" : "Module::MetaData could not parse a version from /home/kent/perl5/perlbrew/perls/5.21.6/lib/site_perl/5.21.6/Acme/CPANAuthors/Factory.pm"
+   },
    "modules" : {
       "CPAN::Meta" : null,
       "Dist::Zilla" : null,
@@ -51,7 +54,14 @@
       "Dist::Zilla::PluginBundle::Author::KENTNL" : null,
       "ExtUtils::MakeMaker" : null,
       "File::Spec" : null,
+      "HTML::Entities" : null,
+      "HTTP::Tiny" : null,
+      "JSON::MaybeXS" : null,
+      "List::MoreUtils" : null,
+      "Math::Random::MT" : null,
       "Moo" : null,
+      "Parse::CPAN::Whois" : null,
+      "Path::Tiny" : null,
       "Pod::Coverage::TrustPod" : null,
       "Test::CPAN::Changes" : null,
       "Test::CPAN::Meta" : null,
