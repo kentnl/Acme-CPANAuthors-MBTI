@@ -31,7 +31,7 @@ my %avatar_urls = (
 
 
 
-sub authors { wantarray ? %authors : \%authors }
+sub authors { return ( wantarray ? %authors : \%authors ) }
 
 
 
@@ -39,7 +39,7 @@ sub authors { wantarray ? %authors : \%authors }
 
 
 
-sub category { 'MBTI::INTP' }
+sub category { return 'MBTI::INTP' }
 
 
 
@@ -47,7 +47,11 @@ sub category { 'MBTI::INTP' }
 
 
 
-sub avatar_url { return $avatar_urls{ $_[1] } }
+sub avatar_url {
+  my ( $id ) = @_;
+  return $avatar_urls{$id};
+}
+
 # end generated code
 
 #>>>

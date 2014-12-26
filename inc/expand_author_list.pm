@@ -114,7 +114,7 @@ $avatar_urls);
 
 =cut
 
-sub authors { wantarray ? \%authors : \\\%authors }
+sub authors { return ( wantarray ? \%authors : \\\%authors ) }
 
 =method category
 
@@ -122,7 +122,7 @@ sub authors { wantarray ? \%authors : \\\%authors }
 
 =cut
 
-sub category { '$category' }
+sub category { return '$category' }
 
 =method avatar_url
 
@@ -130,7 +130,11 @@ sub category { '$category' }
 
 =cut
 
-sub avatar_url { return \$avatar_urls{ \$_[1] } }
+sub avatar_url {
+  my ( \$id ) = \@_;
+  return \$avatar_urls{\$id};
+}
+
 # end generated code
 EOF
 
