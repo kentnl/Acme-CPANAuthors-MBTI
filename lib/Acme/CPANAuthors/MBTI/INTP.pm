@@ -13,6 +13,7 @@ our $VERSION = '0.001000';
 #<<<
 # Code inserted by inc/expand_author_list#authors_to_code
 # by Dist::Zilla::Plugin::MungeFile::WithDataSection 0.007
+## no critic (ValuesAndExpressions::RestrictLongStrings,Tics::ProhibitLongLines)
 my %authors  = (
     KENTNL => 'Kent Fredric',
 );
@@ -20,6 +21,8 @@ my %authors  = (
 my %avatar_urls = (
     KENTNL => 'https://secure.gravatar.com/avatar/4b96677ae9ecbe76b8c33ead244f7407?s=80&d=http%3A%2F%2Fwww.gravatar.com%2Favatar%2F4b96677ae9ecbe76b8c33ead244f7407%3Fs%3D130%26d%3Didenticon',
 );
+
+## use critic
 
 
 

@@ -98,11 +98,14 @@ sub authors_to_code {
   return <<"EOF";
 # Code inserted by inc/expand_author_list#authors_to_code
 # by $plugin_name $plugin_version
+## no critic (ValuesAndExpressions::RestrictLongStrings,Tics::ProhibitLongLines)
 my \%authors  = (
 $authors);
 
 my \%avatar_urls = (
 $avatar_urls);
+
+## use critic
 
 =method authors
 
