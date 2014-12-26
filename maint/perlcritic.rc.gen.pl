@@ -30,7 +30,7 @@ $bundle->configure;
 $bundle->remove_policy('CodeLayout::RequireUseUTF8');
 $bundle->remove_policy('Tics::ProhibitLongLines');
 $bundle->remove_policy('Documentation::PodSpelling'); # yolo
-#$bundle->remove_policy('Documentation::RequirePodLinksIncludeText');
+$bundle->remove_policy('Documentation::RequirePodLinksIncludeText');
 
 #$bundle->remove_policy('ErrorHandling::RequireCarping');
 #$bundle->remove_policy('NamingConventions::Capitalization');
