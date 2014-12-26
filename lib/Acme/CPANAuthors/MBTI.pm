@@ -10,6 +10,8 @@ our $VERSION = '0.001000';
 
 # AUTHORITY
 
+use Acme::CPANAuthors::MBTI::INTP;
+
 =head1 DESCRIPTION
 
 Minimal release atm.
