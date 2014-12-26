@@ -124,8 +124,7 @@ allow_includes = 1
 
 [ControlStructures::ProhibitUntilBlocks]
 
-[Documentation::PodSpelling]
-spell_command = aspell list --lang en_US
+[-Documentation::PodSpelling]
 
 [Documentation::ProhibitAdjacentLinks]
 

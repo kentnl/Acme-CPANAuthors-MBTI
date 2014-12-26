@@ -98,7 +98,7 @@ sub authors_to_code {
   return <<"EOF";
 # Code inserted by inc/expand_author_list#authors_to_code
 # by $plugin_name $plugin_version
-## no critic (ValuesAndExpressions::RestrictLongStrings,Tics::ProhibitLongLines)
+## no critic (ValuesAndExpressions::RestrictLongStrings)
 my \%authors  = (
 $authors);
 
@@ -182,7 +182,7 @@ sub mbti_description_text {
   my ($type) = @_;
   my $lctype = lc($type);
   return <<"EOF";
-For more details see L<< C<Acme::CPANAuthors::MBTI> >>.
+For more details see L<< C<Acme::CPANAuthors::MBTI>|Acme::CPANAuthors::MBTI >>.
 
 =over 4
 
