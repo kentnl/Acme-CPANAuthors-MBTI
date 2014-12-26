@@ -9,7 +9,7 @@ package Acme::CPANAuthors::MBTI::INTP;
 
 our $AUTHORITY = 'cpan:KENTNL'; # AUTHORITY
 
-our $VERSION = '0.001000';
+our $VERSION = '0.001001';
 #<<<
 # Code inserted by inc/expand_author_list#authors_to_code
 # by Dist::Zilla::Plugin::MungeFile::WithDataSection 0.007
@@ -70,7 +70,7 @@ Acme::CPANAuthors::MBTI::INTP - The TiNe CPAN Authors
 
 =head1 VERSION
 
-version 0.001000
+version 0.001001
 
 =head1 SYNOPSIS
 
