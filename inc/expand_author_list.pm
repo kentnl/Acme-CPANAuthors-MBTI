@@ -93,20 +93,48 @@ sub authors_to_code {
     $avatar_urls .= "    $author->{id} => '$author->{avatar}',\n";
   }
 
+  my @display_authors = map { $config{data}->[ rng->irand() % scalar @{ $config{data} } ] } 1;
+
   return <<"EOF";
 # Code inserted by inc/expand_author_list#authors_to_code
 # by $plugin_name $plugin_version
+## no critic (ValuesAndExpressions::RestrictLongStrings)
 my \%authors  = (
 $authors);
 
 my \%avatar_urls = (
 $avatar_urls);
 
-sub authors { wantarray ? \%authors : \\\%authors }
+## use critic
 
-sub category { '$category' }
+=method authors
 
-sub avatar_url { return \$avatar_urls{ \$_[1] } }
+  my \$scalar_ref = Acme::CPANAuthors::${category}\->authors;
+  my \%hash       = Acme::CPANAuthors::${category}\->authors;
+
+=cut
+
+sub authors { return ( wantarray ? \%authors : \\\%authors ) }
+
+=method category
+
+  my \$scalar = Acme::CPANAuthors::${category}\->category;
+
+=cut
+
+sub category { return '$category' }
+
+=method avatar_url
+
+  my \$url = Acme::CPANAuthors::${category}\->avatar_url('$display_authors[0]->{id}');
+
+=cut
+
+sub avatar_url {
+  my ( \$id ) = \@_;
+  return \$avatar_urls{\$id};
+}
+
 # end generated code
 EOF
 
@@ -154,7 +182,7 @@ sub mbti_description_text {
   my ($type) = @_;
   my $lctype = lc($type);
   return <<"EOF";
-For more details see L<< C<Acme::CPANAuthors::MBTI> >>.
+For more details see L<< C<Acme::CPANAuthors::MBTI>|Acme::CPANAuthors::MBTI >>.
 
 =over 4
 
@@ -177,7 +205,8 @@ sub mbti_description {
   my $link        = mbti_type( $config{type} );
 
   return <<"EOF";
-This class provides a hash of PAUSE ID's and names of authors who have identified themselves as $link
+This class provides a hash of PAUSE ID's and names of authors
+who have identified themselves as $link
 
 =begin html
 
@@ -200,7 +229,7 @@ sub generate_synopsis {
   my @items          = @{ $config{'data'} };
   my @authors        = map { $items[ rng->irand() % scalar @items ] } 1 .. 3;
 
-  return ( <<"EOF" =~ s/^/    /msgr );
+  return ( <<"EOF" =~ s/^(\S)/    $1/msgr );
 use Acme::CPANAuthors;
 use Acme::CPANAuthors::$config{category};
 # Or just use Acme::CPANAuthors::MBTI

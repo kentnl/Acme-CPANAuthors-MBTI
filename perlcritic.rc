@@ -88,7 +88,7 @@ allow_includes = 1
 
 [CodeLayout::RequireTrailingCommas]
 
-[CodeLayout::RequireUseUTF8]
+[-CodeLayout::RequireUseUTF8]
 
 [Compatibility::ConstantLeadingUnderscore]
 
@@ -124,8 +124,7 @@ allow_includes = 1
 
 [ControlStructures::ProhibitUntilBlocks]
 
-[Documentation::PodSpelling]
-spell_command = aspell list --lang en_US
+[-Documentation::PodSpelling]
 
 [Documentation::ProhibitAdjacentLinks]
 
@@ -159,7 +158,7 @@ spell_command = aspell list --lang en_US
 
 [Documentation::RequirePodAtEnd]
 
-[Documentation::RequirePodLinksIncludeText]
+[-Documentation::RequirePodLinksIncludeText]
 
 [-Documentation::RequirePodSections]
 
@@ -353,8 +352,7 @@ equivalent_modules = Moose Moo
 [TestingAndDebugging::RequireUseWarnings]
 equivalent_modules = Moose Moo
 
-[Tics::ProhibitLongLines]
-base_max = 130
+[-Tics::ProhibitLongLines]
 
 [Tics::ProhibitManyArrows]
 
