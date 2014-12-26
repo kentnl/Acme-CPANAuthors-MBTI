@@ -93,8 +93,8 @@ sub authors_to_code {
     $avatar_urls .= "    $author->{id} => '$author->{avatar}',\n";
   }
 
-   my @display_authors        = map { $config{data}->[ rng->irand() % scalar @{ $config{data} } ] } 1;
- 
+  my @display_authors = map { $config{data}->[ rng->irand() % scalar @{ $config{data} } ] } 1;
+
   return <<"EOF";
 # Code inserted by inc/expand_author_list#authors_to_code
 # by $plugin_name $plugin_version
@@ -116,7 +116,7 @@ sub authors { wantarray ? \%authors : \\\%authors }
 =method category
 
   my \$scalar = Acme::CPANAuthors::${category}\->category;
- 
+
 =cut
 
 sub category { '$category' }
@@ -124,7 +124,7 @@ sub category { '$category' }
 =method avatar_url
 
   my \$url = Acme::CPANAuthors::${category}\->avatar_url('$display_authors[0]->{id}');
- 
+
 =cut
 
 sub avatar_url { return \$avatar_urls{ \$_[1] } }
