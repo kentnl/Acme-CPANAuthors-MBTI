@@ -205,7 +205,8 @@ sub mbti_description {
   my $link        = mbti_type( $config{type} );
 
   return <<"EOF";
-This class provides a hash of PAUSE ID's and names of authors who have identified themselves as $link
+This class provides a hash of PAUSE ID's and names of authors
+who have identified themselves as $link
 
 =begin html
 

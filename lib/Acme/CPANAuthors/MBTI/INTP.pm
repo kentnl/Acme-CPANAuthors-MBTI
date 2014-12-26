@@ -91,7 +91,8 @@ version 0.001000
 
 =head1 DESCRIPTION
 
-This class provides a hash of PAUSE ID's and names of authors who have identified themselves as   L<< C<INTP>|https://en.wikipedia.org/wiki/INTP >>
+This class provides a hash of PAUSE ID's and names of authors
+who have identified themselves as   L<< C<INTP>|https://en.wikipedia.org/wiki/INTP >>
 
 =head1 METHODS
 
