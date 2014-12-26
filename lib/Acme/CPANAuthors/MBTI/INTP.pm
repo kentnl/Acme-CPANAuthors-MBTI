@@ -50,7 +50,7 @@ version 0.001000
 
     use Acme::CPANAuthors;
     use Acme::CPANAuthors::MBTI::INTP;
-# Or just use Acme::CPANAuthors::MBTI
+    # Or just use Acme::CPANAuthors::MBTI
 
     my $authors  = Acme::CPANAuthors->new('MBTI::INTP');
     my $number   = $authors->count;
