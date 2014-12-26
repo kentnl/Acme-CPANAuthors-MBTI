@@ -9,7 +9,7 @@ build_requires:
   perl: '5.008'
 configure_requires:
   ExtUtils::MakeMaker: '0'
-  perl: '5.008'
+  perl: '5.014'
 dynamic_config: 0
 generated_by: 'Dist::Zilla version 5.029, CPAN::Meta::Converter version 2.143240'
 license: perl
@@ -41,14 +41,15 @@ x_Dist_Zilla:
     version: '5.021006'
   plugins:
     -
-      class: Dist::Zilla::Plugin::MungeFile::WithDataSection
+      class: Dist::Zilla::Plugin::MungeFile::WithConfigFile
       config:
-        Dist::Zilla::Plugin::MungeFile::WithDataSection:
+        Dist::Zilla::Plugin::MungeFile::WithConfigFile:
+          configfile: undef
           files: []
           finder:
             - ':InstallModules'
-      name: MungeFile::WithDataSection
-      version: '0.007'
+      name: MungeFile::WithConfigFile
+      version: '0.002'
     -
       class: Dist::Zilla::Plugin::MetaConfig
       name: '@Author::KENTNL/MetaConfig'

@@ -31,7 +31,7 @@
       "Dist::Zilla::Plugin::MetaTests" : null,
       "Dist::Zilla::Plugin::MetaYAML" : null,
       "Dist::Zilla::Plugin::MinimumPerl" : null,
-      "Dist::Zilla::Plugin::MungeFile::WithDataSection" : null,
+      "Dist::Zilla::Plugin::MungeFile::WithConfigFile" : null,
       "Dist::Zilla::Plugin::PodCoverageTests" : null,
       "Dist::Zilla::Plugin::PodSyntaxTests" : null,
       "Dist::Zilla::Plugin::PodWeaver" : null,

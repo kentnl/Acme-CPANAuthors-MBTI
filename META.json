@@ -20,7 +20,7 @@
          },
          "requires" : {
             "ExtUtils::MakeMaker" : "0",
-            "perl" : "5.008"
+            "perl" : "5.014"
          }
       },
       "develop" : {
@@ -55,7 +55,7 @@
             "Dist::Zilla::Plugin::MetaTests" : "0",
             "Dist::Zilla::Plugin::MetaYAML" : "0",
             "Dist::Zilla::Plugin::MinimumPerl" : "0",
-            "Dist::Zilla::Plugin::MungeFile::WithDataSection" : "0.003",
+            "Dist::Zilla::Plugin::MungeFile::WithConfigFile" : "0.002",
             "Dist::Zilla::Plugin::PodCoverageTests" : "0",
             "Dist::Zilla::Plugin::PodSyntaxTests" : "0",
             "Dist::Zilla::Plugin::PodWeaver" : "0",
@@ -151,17 +151,18 @@
       },
       "plugins" : [
          {
-            "class" : "Dist::Zilla::Plugin::MungeFile::WithDataSection",
+            "class" : "Dist::Zilla::Plugin::MungeFile::WithConfigFile",
             "config" : {
-               "Dist::Zilla::Plugin::MungeFile::WithDataSection" : {
+               "Dist::Zilla::Plugin::MungeFile::WithConfigFile" : {
+                  "configfile" : "undef",
                   "files" : [],
                   "finder" : [
                      ":InstallModules"
                   ]
                }
             },
-            "name" : "MungeFile::WithDataSection",
-            "version" : "0.007"
+            "name" : "MungeFile::WithConfigFile",
+            "version" : "0.002"
          },
          {
             "class" : "Dist::Zilla::Plugin::MetaConfig",
