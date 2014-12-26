@@ -13,11 +13,13 @@ our $VERSION = '0.001000';
 
 # Code inserted by inc/expand_author_list#authors_to_code
 # by Dist::Zilla::Plugin::MungeFile::WithDataSection 0.007
-my %authors  = (     KENTNL => 'Kent Fredric',
- );
+my %authors  = (
+    KENTNL => 'Kent Fredric',
+);
 
-my %avatar_urls = (     KENTNL => 'https://secure.gravatar.com/avatar/4b96677ae9ecbe76b8c33ead244f7407?s=80&d=http%3A%2F%2Fwww.gravatar.com%2Favatar%2F4b96677ae9ecbe76b8c33ead244f7407%3Fs%3D130%26d%3Didenticon',
- );
+my %avatar_urls = (
+    KENTNL => 'https://secure.gravatar.com/avatar/4b96677ae9ecbe76b8c33ead244f7407?s=80&d=http%3A%2F%2Fwww.gravatar.com%2Favatar%2F4b96677ae9ecbe76b8c33ead244f7407%3Fs%3D130%26d%3Didenticon',
+);
 
 sub authors { wantarray ? %authors : \%authors }
 
@@ -45,21 +47,20 @@ version 0.001000
 
 =head1 SYNOPSIS
 
-^    use Acme::CPANAuthors;
-^    use Acme::CPANAuthors::MBTI::INTP;
-^    # Or just use Acme::CPANAuthors::MBTI
-^    
-^    my $authors  = Acme::CPANAuthors->new('MBTI::INTP');
-^    my $number   = $authors->count;
-^    my @ids      = $authors->id;
-^    my @distros  = $authors->distributions('KENTNL');
-^    my $url      = $authors->avatar_url('KENTNL');
-^    my $kwalitee = $authors->kwalitee('KENTNL');
-^    
-^    my %authorshash    = Acme::CPANAuthors::MBTI::INTP->authors;
-^    my $authorshashref = Acme::CPANAuthors::MBTI::INTP->authors;
-^    my $category       = Acme::CPANAuthors::MBTI::INTP->category;
-^    
+    use Acme::CPANAuthors;
+    use Acme::CPANAuthors::MBTI::INTP;
+    # Or just use Acme::CPANAuthors::MBTI
+    
+    my $authors  = Acme::CPANAuthors->new('MBTI::INTP');
+    my $number   = $authors->count;
+    my @ids      = $authors->id;
+    my @distros  = $authors->distributions('KENTNL');
+    my $url      = $authors->avatar_url('KENTNL');
+    my $kwalitee = $authors->kwalitee('KENTNL');
+    
+    my %authorshash    = Acme::CPANAuthors::MBTI::INTP->authors;
+    my $authorshashref = Acme::CPANAuthors::MBTI::INTP->authors;
+    my $category       = Acme::CPANAuthors::MBTI::INTP->category;
 
 =head1 DESCRIPTION
 
