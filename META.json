@@ -55,7 +55,7 @@
             "Dist::Zilla::Plugin::MetaTests" : "0",
             "Dist::Zilla::Plugin::MetaYAML" : "0",
             "Dist::Zilla::Plugin::MinimumPerl" : "0",
-            "Dist::Zilla::Plugin::MungeFile::WithConfigFile" : "0.002",
+            "Dist::Zilla::Plugin::MungeFile::WithDataSection" : "0.003",
             "Dist::Zilla::Plugin::PodCoverageTests" : "0",
             "Dist::Zilla::Plugin::PodSyntaxTests" : "0",
             "Dist::Zilla::Plugin::PodWeaver" : "0",
@@ -151,18 +151,17 @@
       },
       "plugins" : [
          {
-            "class" : "Dist::Zilla::Plugin::MungeFile::WithConfigFile",
+            "class" : "Dist::Zilla::Plugin::MungeFile::WithDataSection",
             "config" : {
-               "Dist::Zilla::Plugin::MungeFile::WithConfigFile" : {
-                  "configfile" : "undef",
+               "Dist::Zilla::Plugin::MungeFile::WithDataSection" : {
                   "files" : [],
                   "finder" : [
                      ":InstallModules"
                   ]
                }
             },
-            "name" : "MungeFile::WithConfigFile",
-            "version" : "0.002"
+            "name" : "MungeFile::WithDataSection",
+            "version" : "0.007"
          },
          {
             "class" : "Dist::Zilla::Plugin::MetaConfig",

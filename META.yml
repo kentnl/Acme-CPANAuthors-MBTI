@@ -41,15 +41,14 @@ x_Dist_Zilla:
     version: '5.021006'
   plugins:
     -
-      class: Dist::Zilla::Plugin::MungeFile::WithConfigFile
+      class: Dist::Zilla::Plugin::MungeFile::WithDataSection
       config:
-        Dist::Zilla::Plugin::MungeFile::WithConfigFile:
-          configfile: undef
+        Dist::Zilla::Plugin::MungeFile::WithDataSection:
           files: []
           finder:
             - ':InstallModules'
-      name: MungeFile::WithConfigFile
-      version: '0.002'
+      name: MungeFile::WithDataSection
+      version: '0.007'
     -
       class: Dist::Zilla::Plugin::MetaConfig
       name: '@Author::KENTNL/MetaConfig'
