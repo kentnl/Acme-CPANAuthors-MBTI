@@ -32,7 +32,6 @@
       "Dist::Zilla::Plugin::MetaProvides::Package" : "2.003000",
       "Dist::Zilla::Plugin::MetaTests" : "5.031",
       "Dist::Zilla::Plugin::MetaYAML" : "5.031",
-      "Dist::Zilla::Plugin::MinimumPerl" : "1.006",
       "Dist::Zilla::Plugin::MungeFile::WithDataSection" : "0.007",
       "Dist::Zilla::Plugin::PodCoverageTests" : "5.031",
       "Dist::Zilla::Plugin::PodSyntaxTests" : "5.031",

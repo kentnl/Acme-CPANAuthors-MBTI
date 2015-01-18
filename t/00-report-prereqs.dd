@@ -4,8 +4,7 @@ do { my $x = {
                                           'ExtUtils::MakeMaker' => '7.00'
                                         },
                         'requires' => {
-                                        'ExtUtils::MakeMaker' => '0',
-                                        'perl' => '5.014'
+                                        'ExtUtils::MakeMaker' => '0'
                                       }
                       },
        'develop' => {
@@ -40,7 +39,6 @@ do { my $x = {
                                       'Dist::Zilla::Plugin::MetaProvides::Package' => '1.14000001',
                                       'Dist::Zilla::Plugin::MetaTests' => '0',
                                       'Dist::Zilla::Plugin::MetaYAML' => '0',
-                                      'Dist::Zilla::Plugin::MinimumPerl' => '0',
                                       'Dist::Zilla::Plugin::MungeFile::WithDataSection' => '0.003',
                                       'Dist::Zilla::Plugin::PodCoverageTests' => '0',
                                       'Dist::Zilla::Plugin::PodSyntaxTests' => '0',
@@ -103,8 +101,7 @@ do { my $x = {
                    'requires' => {
                                    'ExtUtils::MakeMaker' => '0',
                                    'File::Spec' => '0',
-                                   'Test::More' => '0.89',
-                                   'perl' => '5.008'
+                                   'Test::More' => '0.89'
                                  }
                  }
      };
