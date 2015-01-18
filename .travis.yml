@@ -23,23 +23,29 @@ matrix:
     - perl: 5.8
     - env: STERILIZE_ENV=0 RELEASE_TESTING=1 AUTHOR_TESTING=1
     - env: STERILIZE_ENV=0 DEVELOPER_DEPS=1
-    - env: TRAVIS_BRANCH=master
-      perl: 5.10
-    - env: TRAVIS_BRANCH=master
-      perl: 5.12
-    - env: TRAVIS_BRANCH=master
+    - &1
+      env: STERILIZE_ENV=0
       perl: 5.8
+    - &2
+      env: STERILIZE_ENV=0
+      perl: 5.10
+    - &3
+      env: STERILIZE_ENV=0
+      perl: 5.12
+    - &4
+      env: STERILIZE_ENV=1
+      perl: 5.8
+    - &5
+      env: STERILIZE_ENV=1
+      perl: 5.10
   include:
     - env: STERILIZE_ENV=0 COVERAGE_TESTING=1
       perl: 5.21
     - env: STERILIZE_ENV=1
       perl: 5.21
-    - env: STERILIZE_ENV=0
-      perl: 5.8
-    - env: STERILIZE_ENV=0
-      perl: 5.10
-    - env: STERILIZE_ENV=0
-      perl: 5.12
+    - *1
+    - *2
+    - *3
     - env: STERILIZE_ENV=0
       perl: 5.14
     - env: STERILIZE_ENV=0
@@ -48,10 +54,8 @@ matrix:
       perl: 5.20
     - env: STERILIZE_ENV=0
       perl: 5.21
-    - env: STERILIZE_ENV=1
-      perl: 5.8
-    - env: STERILIZE_ENV=1
-      perl: 5.10
+    - *4
+    - *5
     - env: STERILIZE_ENV=1
       perl: 5.20
     - env: STERILIZE_ENV=0 DEVELOPER_DEPS=1

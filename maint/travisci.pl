@@ -17,7 +17,7 @@ sub {
     my $support_version = $include_matrix->{perl};
     next unless $support_version;
     next unless version->parse( 'v' . $support_version ) < $base_version;
-    push @extra_allow_fail, $include_matrix;
+    push @extra_allow_fail, { %{$include_matrix} };
   }
   push @{ $yaml->{matrix}->{allow_failures} }, @extra_allow_fail;
   return $yaml;
