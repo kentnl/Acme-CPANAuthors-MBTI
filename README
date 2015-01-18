@@ -1,56 +1,60 @@
-NAME
+Acme::CPANAuthors::MBTI
 
-    Acme::CPANAuthors::MBTI - CPAN Authors by MBTI Type
+Minimal release atm.
 
-VERSION
+Send bug reports ( or preferably patches ) if you want inclusion.
 
-    version 0.001001
+Will generate extra .pm files on demand as soon as we have members (
+Trivial Effort )
 
-DESCRIPTION
+Recommended quiz for people who have no idea and just want to play
+along: <http://www.25quiz.com/>
 
-    Minimal release atm.
+Its not guaranteed to be accurate, but that doesn't matter.
 
-    Send bug reports ( or preferably patches ) if you want inclusion.
+Its a generalisation tool.
 
-    Will generate extra .pm files on demand as soon as we have members (
-    Trivial Effort )
+Just because the generalisation holds that averages of demographic
+X[0..50] is "Y", that does not mean you can take X[1] and assert Y.
 
-    Recommended quiz for people who have no idea and just want to play
-    along: http://www.25quiz.com/
+However, knowing X[1] is between X[0] and X[50] you can conjecture their
+odds at being relative to the demographic average Y.
 
-    Its not guaranteed to be accurate, but that doesn't matter.
+Thus, one can conjecture what one *might* do in a slightly better manner
+than enumerating all possible behaviours observed in humans.
 
-    Its a generalisation tool.
+Blah blah blah more ranting here.
 
-    Just because the generalisation holds that averages of demographic
-    X[0..50] is "Y", that does not mean you can take X[1] and assert Y.
+Creds to "ETHER" <https://metacpan.org/author/ETHER> for the original
+entry I stole all the things from and refactored them to death,
+Acme::CPANAuthors::Nonhuman
 
-    However, knowing X[1] is between X[0] and X[50] you can conjecture
-    their odds at being relative to the demographic average Y.
+Subsequently, my source file is a lot smaller and needs about 3
+variables modifed to make a new type.
 
-    Thus, one can conjecture what one might do in a slightly better manner
-    than enumerating all possible behaviours observed in humans.
+So just change the files in "/authorlists"
 
-    Blah blah blah more ranting here.
+INSTALLATION
 
-    Creds to ETHER <https://metacpan.org/author/ETHER> for the original
-    entry I stole all the things from and refactored them to death,
-    Acme::CPANAuthors::Nonhuman
+This is a Perl module distribution. It should be installed with whichever
+tool you use to manage your installation of Perl, e.g. any of
 
-    Subsequently, my source file is a lot smaller and needs about 3
-    variables modifed to make a new type.
+  cpanm .
+  cpan  .
+  cpanp -i .
 
-    So just change the files in /authorlists
+Consult http://www.cpan.org/modules/INSTALL.html for further instruction.
+Should you wish to install this module manually, the procedure is
 
-AUTHOR
-
-    Kent Fredric <kentnl@cpan.org>
+  perl Makefile.PL
+  make
+  make test
+  make install
 
 COPYRIGHT AND LICENSE
 
-    This software is copyright (c) 2014 by Kent Fredric
-    <kentfredric@gmail.com>.
+This software is copyright (c) 2015 by Kent Fredric
+<kentfredric@gmail.com>.
 
-    This is free software; you can redistribute it and/or modify it under
-    the same terms as the Perl 5 programming language system itself.
-
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
