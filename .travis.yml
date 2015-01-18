@@ -23,6 +23,12 @@ matrix:
     - perl: 5.8
     - env: STERILIZE_ENV=0 RELEASE_TESTING=1 AUTHOR_TESTING=1
     - env: STERILIZE_ENV=0 DEVELOPER_DEPS=1
+    - env: TRAVIS_BRANCH=master
+      perl: 5.10
+    - env: TRAVIS_BRANCH=master
+      perl: 5.12
+    - env: TRAVIS_BRANCH=master
+      perl: 5.8
   include:
     - env: STERILIZE_ENV=0 COVERAGE_TESTING=1
       perl: 5.21
