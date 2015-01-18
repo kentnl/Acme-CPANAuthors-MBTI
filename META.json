@@ -123,11 +123,11 @@
    "provides" : {
       "Acme::CPANAuthors::MBTI" : {
          "file" : "lib/Acme/CPANAuthors/MBTI.pm",
-         "version" : "0.001001"
+         "version" : "0.001002"
       },
       "Acme::CPANAuthors::MBTI::INTP" : {
          "file" : "lib/Acme/CPANAuthors/MBTI/INTP.pm",
-         "version" : "0.001001"
+         "version" : "0.001002"
       }
    },
    "release_status" : "stable",
@@ -142,7 +142,7 @@
          "web" : "https://github.com/kentnl/Acme-CPANAuthors-MBTI"
       }
    },
-   "version" : "0.001001",
+   "version" : "0.001002",
    "x_BuiltWith" : {
       "external_file" : "misc/built_with.json"
    },
@@ -605,7 +605,7 @@
                "Dist::Zilla::Plugin::Git::Tag" : {
                   "branch" : null,
                   "signed" : 0,
-                  "tag" : "0.001001-source",
+                  "tag" : "0.001002-source",
                   "tag_format" : "%v-source",
                   "tag_message" : "v%v",
                   "time_zone" : "local"
@@ -676,7 +676,7 @@
                "Dist::Zilla::Plugin::Git::Tag" : {
                   "branch" : "releases",
                   "signed" : 0,
-                  "tag" : "0.001001",
+                  "tag" : "0.001002",
                   "tag_format" : "%v",
                   "tag_message" : "v%v",
                   "time_zone" : "local"

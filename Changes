@@ -1,5 +1,7 @@
 Release history for Acme-CPANAuthors-MBTI
 
+0.001002 2015-01-18T07:53:27Z b832784
+
 0.001001 2015-01-18T07:51:34Z 65b7481
  [Bugfix]
  - Have CPANAuthors that supports empty namespaces in ::CPANAuthors

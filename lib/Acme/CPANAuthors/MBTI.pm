@@ -4,7 +4,7 @@ use warnings;
 
 package Acme::CPANAuthors::MBTI;
 
-our $VERSION = '0.001001';
+our $VERSION = '0.001002';
 
 # ABSTRACT: CPAN Authors by MBTI Type
 
@@ -60,7 +60,7 @@ Acme::CPANAuthors::MBTI - CPAN Authors by MBTI Type
 
 =head1 VERSION
 
-version 0.001001
+version 0.001002
 
 =head1 DESCRIPTION
 
