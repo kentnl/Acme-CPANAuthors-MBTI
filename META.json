@@ -24,6 +24,7 @@
       },
       "develop" : {
          "recommends" : {
+            "Path::Tiny" : "0.058",
             "Test::More" : "0.99"
          },
          "requires" : {
