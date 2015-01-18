@@ -39,7 +39,6 @@ perl = 5.008
 ; authordep List::MoreUtils = 0
 
 [Prereqs / DevelopRequires]
-HTTP::Tiny = 0
 Parse::CPAN::Whois = 0
 Acme::CPANAuthors::Factory = 0
 JSON::MaybeXS = 1.001000
