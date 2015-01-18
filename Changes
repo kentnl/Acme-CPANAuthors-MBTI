@@ -1,5 +1,16 @@
 Release history for Acme-CPANAuthors-MBTI
 
+0.001001 2015-01-18T07:51:34Z 65b7481
+ [Bugfix]
+ - Have CPANAuthors that supports empty namespaces in ::CPANAuthors
+
+ [Dependencies::Stats]
+ - Dependencies changed since 0.001000, see misc/*.deps* for details
+ - configure: -1 (recommends: ↓1)
+ - develop: +3 -1 (recommends: ↓1, suggests: ↑1)
+ - runtime: +1
+ - test: -1 (recommends: ↓2)
+
 0.001000 2014-12-26T11:48:13Z 70a79bf
  - First version.
 
