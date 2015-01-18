@@ -27,6 +27,7 @@ twitter_extra_hash_tags = #mbti
 
 [Prereqs]
 Acme::CPANAuthors = 0.24 ; For parent group with no ->authors
+perl = 5.008
 
 [Prereqs / DevelopRequires]
 HTTP::Tiny = 0

@@ -4,6 +4,9 @@ This file contains changes in REQUIRED dependencies for standard CPAN phases (co
  [Added / runtime requires]
  - Acme::CPANAuthors 0.24
 
- [Changed / configure requires]
- - perl 5.008 → 5.014
+ [Removed / configure requires]
+ - perl 5.008
+
+ [Removed / test requires]
+ - perl 5.008
 
