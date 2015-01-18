@@ -32,6 +32,7 @@ inc/expand_author_list.pm
 lib/Acme/CPANAuthors/MBTI.pm
 lib/Acme/CPANAuthors/MBTI/INTP.pm
 maint/perlcritic.rc.gen.pl
+maint/travisci.pl
 misc/Changes.deps
 misc/Changes.deps.all
 misc/Changes.deps.dev
