@@ -9,7 +9,7 @@ package Acme::CPANAuthors::MBTI::INTP;
 
 # AUTHORITY
 
-our $VERSION = '0.001001';
+our $VERSION = '0.001002';
 #<<<
 {{
 #>>>
