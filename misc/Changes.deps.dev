@@ -12,3 +12,6 @@ This file contains changes to DEVELOPMENT dependencies only ( both REQUIRED and 
  [Changed / develop suggests]
  - Dist::Zilla::PluginBundle::Author::KENTNL 2.022002 → 2.023002
 
+ [Removed / develop requires]
+ - Dist::Zilla::Plugin::MinimumPerl
+

@@ -22,8 +22,11 @@ bumpversions      = 1
 copyfiles         = LICENSE
 srcreadme         = mkdn
 twitter_extra_hash_tags = #mbti
-MinimumPerl.config_finder = :NoFiles
+-remove = MinimumPerl
 ; auto_prereqs_skip = File::Find
+
+[Prereqs]
+perl = 5.008
 
 [Prereqs / DevelopRequires]
 HTTP::Tiny = 0
