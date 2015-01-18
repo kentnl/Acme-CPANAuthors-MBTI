@@ -1,6 +1,11 @@
 Release history for Acme-CPANAuthors-MBTI
 
 {{$NEXT}}
+ [Dependencies::Stats]
+ - Dependencies changed since 0.001000, see misc/*.deps* for details
+ - configure: ↑1 (recommends: ↓1)
+ - develop: +3 (recommends: ↓1, suggests: ↑1)
+ - test: (recommends: ↓2)
 
 0.001000 2014-12-26T11:48:13Z 70a79bf
  - First version.
