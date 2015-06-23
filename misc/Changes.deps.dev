@@ -18,6 +18,7 @@ This file contains changes to DEVELOPMENT dependencies only ( both REQUIRED and 
 
  [Removed / develop requires]
  - Dist::Zilla::Plugin::MetaYAML
+ - List::MoreUtils
 
 0.001001 2015-01-18T07:51:34Z
  [Added / develop requires]
