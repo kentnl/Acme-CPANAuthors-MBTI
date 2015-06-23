@@ -15,7 +15,6 @@ use JSON::MaybeXS 1.001000;
 use Path::Tiny qw(path);
 use HTML::Entities;
 use Math::Random::MT;
-use List::MoreUtils qw( distinct );
 
 sub tempdir { return state $tempdir = Path::Tiny->tempdir() }
 sub http    { return state $http    = HTTP::Tiny->new() }
