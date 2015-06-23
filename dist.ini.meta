@@ -36,7 +36,6 @@ perl = 5.008
 ; authordep Path::Tiny = 0
 ; authordep HTML::Entities = 0
 ; authordep Math::Random::MT = 0
-; authordep List::MoreUtils = 0
 
 [Prereqs / DevelopRequires]
 perl = 5.014000 ; /r modifier
