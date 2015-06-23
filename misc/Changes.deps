@@ -11,4 +11,3 @@ This file contains changes in REQUIRED dependencies for standard CPAN phases (co
 
  [Removed / test requires]
  - perl 5.008
-
