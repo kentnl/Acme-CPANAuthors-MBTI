@@ -15,7 +15,7 @@ our $VERSION = '0.001002';
 #>>>
 
     # Template Injector Block
-    require "inc/expand_author_list.pm";
+    require "./inc/expand_author_list.pm";
     our $type     = "INTP";
     our $category = "MBTI::$type";
     our $data     = expand_author_list::extract_data( $category, "authorlists/$type.txt" );
