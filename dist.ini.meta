@@ -29,13 +29,13 @@ twitter_extra_hash_tags = #mbti
 Acme::CPANAuthors = 0.24 ; For parent group with no ->authors
 perl = 5.008
 
+; authordep HTTP::Tiny = 0
+; authordep Parse::CPAN::Whois = 0
+; authordep Acme::CPANAuthors::Factory = 0
+; authordep JSON::MaybeXS = 1.001000
+; authordep Path::Tiny = 0
+; authordep HTML::Entities = 0
+; authordep Math::Random::MT = 0
+
 [Prereqs / DevelopRequires]
-HTTP::Tiny = 0
-Parse::CPAN::Whois = 0
-Acme::CPANAuthors::Factory = 0
-JSON::MaybeXS = 1.001000
-Path::Tiny = 0 
-HTML::Entities = 0
-Math::Random::MT = 0
-List::MoreUtils = 0
 perl = 5.014000 ; /r modifier
